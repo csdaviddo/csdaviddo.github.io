@@ -1,0 +1,53 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+<p class="meta">{{ page.date | date_to_string }} - Tags: {{ page.tags | array_to_sentence_string }}</p>
+
+<div class="button_container">
+  {% if page.github_url %}
+    <a href="{{ page.github_url }}">
+      <div class="button_link">
+        View on<br /><strong>Github</strong>
+      </div>
+    </a>
+  {% endif %}
+  {% if page.colab_url %}
+    <a href="{{ page.colab_url }}">
+      <div class="button_link">
+        View in<br /><strong>Colab</strong>
+      </div>
+    </a>
+  {% endif %}
+  {% if page.kaggle_url %}
+    <a href="{{ page.kaggle_url }}">
+      <div class="button_link">
+        View on<br /><strong>Kaggle</strong>
+      </div>
+    </a>
+  {% endif %}
+</div>
+
+<div class="post">
+  {{ content }}
+
+  {% if page.comments %}
+    {% if site.comments %}
+      <div id="disqus_thread"></div>
+      <script>
+      var disqus_config = function () {
+        this.page.url = '{{ site.url }}{{ page.url }}';
+        this.page.identifier = '{{ page.id }}';
+      };
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://{{ site.disqus_shortname }}.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    {% endif %}
+  {% endif %}
+
+</div>

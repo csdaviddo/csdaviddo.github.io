@@ -1,0 +1,64 @@
+# Info about you
+name: Your Name
+position: Job Title
+email: youremail@gmail.com
+company_name: Company Name
+company_url: https://www.yourcompany.com
+place_name: City, ST
+
+# Blog info
+title: Your Name's Blog
+description: Blog
+url: https://brendanhasz.github.io/github-io-blog-template/
+main_github_io: false
+long_description: >-
+    Hi!  Welcome to the template github.io blog site.  This can be a paragraph
+    introducing yourself which will go at the top of the main page for your
+    blog.
+
+# Social links
+github_url: https://github.com/yourgithubusername
+linkedin_url: http://www.linkedin.com/in/your-name
+social:
+  links:
+    - http://www.linkedin.com/in/your-name
+    - https://github.com/yourgithubusername
+
+# Images + files
+logo: assets/img/headshot.svg
+cv_url: assets/files/cv.pdf
+resume_url: assets/files/resume.pdf
+
+# Blog settings
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+highlighter: rouge
+color_mode: auto  # auto, light, or dark
+comments: false
+disqus_shortname: none
+syntax_highlight_stylesheet: syntax_highlight.css
+
+# Colors - light mode
+colors:
+  text: 282828
+  tag: dbefdc
+  tag_hover: 93cf95
+  header_background: 2b422b
+  header_text: dbefdc
+  header_link_hover: 93cf95
+  links: 459c48
+  links_visited: 357a38
+
+# Colors - dark mode
+colors_dark:
+  background: 333
+  text: ccc
+  tag: 2e6830
+  tag_hover: 93cf95
+  header_background: 232
+  header_text: 93cf95
+  header_link: 93cf95
+  header_link_hover: 459c48
+  links: 459c48
+  links_visited: 357a38
