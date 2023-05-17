@@ -34,7 +34,7 @@ markdown: kramdown
 plugins:
   - jekyll-seo-tag
 highlighter: rouge
-color_mode: auto  # auto, light, or dark
+color_mode: light  # auto, light, or dark
 comments: false
 disqus_shortname: none
 syntax_highlight_stylesheet: syntax_highlight.css
