@@ -10,7 +10,7 @@ place_name: Seoul, SK
 title: Do's Blog
 description: Blog
 url: https://csdaviddo.github.io/
-main_github_io: true
+main_github_io: false
 long_description: >-
     Hi!  Welcome to my blog site.  My name is Dzung Do, and I am a Senior Deep Learning Engineer at DeepBlock. 
     My research and engineering interests are mainly in the areas of artificial intelligence, blockchain,
